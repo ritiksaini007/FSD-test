@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div class="div">
+        <form action="#" class="form">
+            <h1>Login</h1>
+            <input type="text" placeholder="Username" id="username"><br>
+            <input type="password" placeholder="password" id="password"><br>
+            <button type="button" id="btn" onclick="login()">Submit</button>
+        </form>
+    </div>
+    <script>
+        function login() {
+            
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            
+            if (username === "CSEC" && password === "CSEC") {
+               
+                window.location.href = "fetch.html";
+            } else {
+      
+                alert("Invalid username or password");
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
